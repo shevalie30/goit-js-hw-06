@@ -8,7 +8,7 @@
 "use strict";
 
 const itemEl = document.querySelector(`#categories`);
-// console.log(navEl.children);
+console.log(itemEl.children);
 const heroTitleEl = itemEl.querySelectorAll(`.item`);
 for (let i = 0; i < heroTitleEl.length; i++) {
     console.log(heroTitleEl[i].querySelector('h2').textContent);

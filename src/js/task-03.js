@@ -23,3 +23,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('.gallery');
+const elements = [];
+
+
+for (const el of images) {
+  const some = galleryEl.insertAdjacentHTML('beforeend',
+    `<li><img src='${el.url}' alt='${el.alt}' width="350"></img> </li>`);
+  elements.push(some);
+};
+
+galleryEl.append(...elements);
+
+galleryEl.cssText = `
+display: flex;
+align-items: center;
+justify-content: space-between;
+list-style-type: none;
+margin: 0;`;
