@@ -7,7 +7,7 @@
 
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.*/
-
+"use strict";
 
 const images = [
   {
@@ -30,15 +30,17 @@ const elements = [];
 
 for (const el of images) {
   const some = galleryEl.insertAdjacentHTML('beforeend',
-    `<li><img src='${el.url}' alt='${el.alt}' width="350"></img> </li>`);
+    `<li><img src='${el.url}' alt='${el.alt}' width="350"/> </li>`);
   elements.push(some);
 };
 
 galleryEl.append(...elements);
 
-galleryEl.cssText = `
-display: flex;
-align-items: center;
-justify-content: space-between;
-list-style-type: none;
-margin: 0;`;
+// galleryEl.style.cssText = `
+// display: flex;
+// align-items: center;
+// justify-content: space-between;
+// list-style: none;
+// margin: 0;';
+
+console.log(galleryEl);

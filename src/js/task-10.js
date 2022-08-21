@@ -11,7 +11,7 @@
 Используй готовую функцию getRandomHexColor для получения цвета.
 Создай функцию destroyBoxes(), которая очищает содержимое div#boxes,
 тем самым удаляя все созданные элементы.*/
-
+"use strict";
 
 
 function getRandomHexColor() {
