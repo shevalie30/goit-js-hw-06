@@ -12,9 +12,7 @@ console.log(itemEl.children);
 const heroTitleEl = itemEl.querySelectorAll(`.item`);
 for (let i = 0; i < heroTitleEl.length; i++) {
     console.log(heroTitleEl[i].querySelector('h2').textContent);
-    console.log(heroTitleEl[i].querySelectorAll('li').length)
-
-
-}
+    console.log(heroTitleEl[i].querySelectorAll('li').length);
+};
 
 

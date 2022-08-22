@@ -36,11 +36,3 @@ for (const el of images) {
 
 galleryEl.append(...elements);
 
-// galleryEl.style.cssText = `
-// display: flex;
-// align-items: center;
-// justify-content: space-between;
-// list-style: none;
-// margin: 0;';
-
-console.log(galleryEl);
