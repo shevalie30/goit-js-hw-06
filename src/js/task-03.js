@@ -34,5 +34,10 @@ for (const el of images) {
   elements.push(some);
 };
 
-galleryEl.append(...elements);
 
+galleryEl.style = `
+display: flex;
+justifyCntent: space-between;
+alignItems: centr;
+list-style:none;
+`
