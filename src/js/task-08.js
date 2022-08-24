@@ -27,9 +27,9 @@ function handleSubmit(event) {
     } = event.currentTarget;
 
     if (email.value === "" || password.value === "") {
-        return console.log('У вас есть не заполненные поля');
+        return alert('У вас есть не заполненные поля');
     }
 
-    console.log('Email: ${email.value}, Password: ${password.value}');
+    console.log({ Email: email.value, Password: password.value });
     event.currentTarget.reset();
 }
